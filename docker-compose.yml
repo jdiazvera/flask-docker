@@ -1,0 +1,15 @@
+version: '3.5'
+
+services:
+  category:
+    build: ./category
+    command: python app.py
+    ports:
+      - 5000:5000
+  
+  product:
+    build: ./product
+    command: python app.py
+    ports:
+      - 8000:8000
+  
